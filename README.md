@@ -1,11 +1,5 @@
 # Agnello Vinharia
 
-### Escopo do Projeto:
-
-```
-vin
-```
-----
 ### Integrantes:
  - Felippe Tuma Costa
  - Davi Yuu Santos Toyota
