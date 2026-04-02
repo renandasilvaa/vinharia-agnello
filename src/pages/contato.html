@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <h1>Agnello Vinheria</h1>
+    <header>
+        <h1>Agnello Vinheria</h1>
+    </header>
     <nav>
         <a href="../../index.html">Home</a>
         <a href="historia.html">Historia</a>
@@ -17,10 +19,46 @@
         <a href="produtos.html">Produtos</a>
         <a href="equipe.html">Equipe</a>
     </nav>    
-    
-    <h2>Contatos</h2>
-    <p>Telefone: (11) 1234-5678</p>
-    <p>Email: contato@agnellovinheria.com</p>
-    <p>Endereço: Rua das Vinhas, 123 - São Paulo, SP</p>
+    <main>
+        <h2>Contatos</h2>
+        <p>Telefone: (11) 1234-5678</p>
+        <p>Email: contato@agnellovinheria.com</p>
+        <p>Endereço: Rua das Vinhas, 123 - São Paulo, SP</p>
+        
+        <img src="../assets/imgs/loja_fisica/entrada_adega_agnello.png" alt="Entrada da loja física da Agnello Vinheria" width="500px" height="300px">
+        <img src="../assets/imgs/loja_fisica/adega_agnello.png" alt="Adega da loja física da Agnello Vinheria, com prateleiras repletas de vinhos de diversas regiões e safras, proporcionando uma experiência visual e sensorial única para os amantes do vinho." width="500px" height="300px">
+    </main>
+
+  <section>
+    <h4>Entre em Contato</h4>
+    <form action="" method="get">
+            <fieldset>
+                <legend>Entre em Contato</legend>
+                <label for="nome_sobrenome">Nome Completo:</label>
+                <input type="text" name="nome_sobrenome" placeholder="Digite aqui." required><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Digite seu email." required><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea name="mensagem" placeholder="Digite sua mensagem aqui." required></textarea><br><br>
+
+                <h5> Qual o seu vinho favorito? </h5>
+                <input type="radio" name="vinhos" value="Tinto">
+                <label for="Tinto">Vinho Tinto Reserva</label><br>
+
+                <input type="radio" name="vinhos" value="Branco">
+                <label for="Branco">Vinho Branco Chardonnay</label><br>
+
+                <input type="radio" name="vinhos" value="Rosé">
+                <label for="Rosé">Vinho Rosé</label><br>
+
+                <input type="radio" name="vinhos" value="Espumante">
+                <label for="Espumante">Vinho Espumante Brut</label><br>
+
+                <br><br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </fieldset>
+    </form>
+ </section>
 </body>
 </html>
