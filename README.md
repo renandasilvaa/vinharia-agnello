@@ -1,10 +1,10 @@
-# 🍷 Agnello Vinharia
+# 🍷 Agnello Vinheria
 
 
 ### 📁 Estrutura do projeto
 
 ```css
-vinharia-agnello/
+Vinheria-agnello/
 │
 ├── index.html
 ├── README.md
@@ -37,4 +37,4 @@ vinharia-agnello/
 ---
 ### 🔗 Link GitHub Pages
 
-[Vinharia Agnello](https://github.com)
+[Vinheria Agnello](https://github.com)
