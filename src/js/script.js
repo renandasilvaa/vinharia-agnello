@@ -16,3 +16,6 @@ console.log("Tipo do Vinho: " + tipoVinho);
 console.log("Safra do Vinho: " + safraVinho);
 console.log("Preço: R$ " + precoVinho.toFixed(2));
 console.log("Quantidade no Estoque: " + quantidadeVinho);
+
+
+alert(`Descrição do Cadastro:\n\n Nome do vinho: ${nomeVinho}\n Tipo de Vinho: ${tipoVinho}\n Safra: ${safraVinho}\n Preço: R$ ${precoVinho}\n Quantidade no Estoque: ${quantidadeVinho}`);
