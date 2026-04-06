@@ -14,8 +14,10 @@ alert("O Cadastro foi realizado com sucesso! Veja mais detalhes no console.");
 console.log("Nome do Vinho: " + nomeVinho);
 console.log("Tipo do Vinho: " + tipoVinho);
 console.log("Safra do Vinho: " + safraVinho);
+// Console.log para a variavel " precoVinho"
 console.log("Preço: R$ " + precoVinho.toFixed(2));
+// Console.log para a variavel " quantidadeVinho"
 console.log("Quantidade no Estoque: " + quantidadeVinho);
 
-
+// Alert para a descrição do cadastro 
 alert(`Descrição do Cadastro:\n\n Nome do vinho: ${nomeVinho}\n Tipo de Vinho: ${tipoVinho}\n Safra: ${safraVinho}\n Preço: R$ ${precoVinho}\n Quantidade no Estoque: ${quantidadeVinho}`);
