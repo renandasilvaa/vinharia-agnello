@@ -36,3 +36,30 @@ h6::selection {
     color: #4A0404;
     transform: translateY(-3px); /* sobe levemente */
 }
+
+/* Produtos */
+.produtos-escolha button:hover {
+    background: #b3956b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(201, 169, 110, 0.3);
+}
+
+/* Contatos */
+
+.entrar-em-contato input::placeholder, textarea::placeholder {
+    color: rgba(245,237,224,0.3);
+}
+
+.entrar-em-contato input:focus,
+.entrar-em-contato textarea:focus,
+.entrar-em-contato select:focus {
+    border-color: rgba(201,169,110,0.65);
+}
+
+.entrar-em-contato button:hover {
+    background: #dbbf85;
+}
+
+.entrar-em-contato button:active {
+    transform: scale(0.99);
+}
