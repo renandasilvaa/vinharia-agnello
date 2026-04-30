@@ -27,3 +27,12 @@ h6::selection {
     color: white;
     background-color: #c9a96e;
 }
+
+/* Links */
+
+
+.links a:hover {
+    background-color: #c9a96e;
+    color: #4A0404;
+    transform: translateY(-3px); /* sobe levemente */
+}
