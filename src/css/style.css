@@ -1,16 +1,18 @@
+
 body {
-    background-color: #5a0a1e;
+    background-color: #5a0a1f;
     padding: 80px; /* espaço interno em toda a página */
 }
 
+
 h1 {
-    color: white;
-    font-weight: 700;
-    font-size: 72px;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: #c9a96e;
+    text-transform: uppercase;
     text-align: center;
-    letter-spacing: 2px; /* espaço entre letras */
-    margin-bottom: 10px;
-    font-family: 'Playfair Display', serif;
 }
 
 h2 {
@@ -39,11 +41,6 @@ h6 {
     font-size: 15px;
 }
 
-footer {
-    text-align: center;
-    color: white;
-}
-
 /* texto */
 main section p {
     margin-left: auto;
@@ -61,7 +58,7 @@ main section p {
     font-size: 16px;
     line-height: 1.6;
     padding-left: 15px;
-    border-left: 3px solid #D4AF37; /* barra decorativa */
+    border-left: 3px solid #c9a96e; /* barra decorativa */
     list-style: none;
     margin: 0 auto; /* centraliza */
     max-width: 600px;
@@ -83,7 +80,7 @@ main section p {
 }
 
 .nav-list li a {
-    color: #5a0a1e;
+    color: #5a0a1f;
     text-decoration: none; /* remove sublinhado */
     font-weight: bold;
     font-size: 16px;
@@ -111,18 +108,12 @@ main section p {
 
 .links a {
     text-decoration: none;
-    color: #D4AF37;
-    border: 1px solid #D4AF37;
+    color: #c9a96e;
+    border: 1px solid #c9a96e;
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
     transition: all 0.3s ease;
-}
-
-.links a:hover {
-    background-color: #D4AF37;
-    color: #4A0404;
-    transform: translateY(-3px); /* sobe levemente */
 }
 
 /* imagens */
@@ -146,7 +137,7 @@ main section p {
     color: #f4f4f4;
     line-height: 1.6;
     padding-left: 15px;
-    border-left: 3px solid #D4AF37;
+    border-left: 3px solid #c9a96e;
     max-width: 600px;
 }
 
@@ -162,7 +153,7 @@ main section p {
 }
 
 .form fieldset {
-    border: 2px solid #D4AF37;
+    border: 2px solid #c9a96e;
     padding: 20px;
     width: 350px;
 }
@@ -179,7 +170,7 @@ main section p {
 }
 
 .form button {
-    background-color: #D4AF37;
+    background-color: #c9a96e;
     border: none;
     padding: 8px;
     cursor: pointer;
@@ -197,7 +188,7 @@ main section p {
 }
 
 .prod2 {
-    border: 1px solid #D4AF37;
+    border: 1px solid #c9a96e;
     padding: 15px;
     margin: 20px 0;
 }
@@ -225,26 +216,399 @@ iframe {
 /* tabela */
 #tabela-produtos {
     margin: 20px auto;
+    border: 1px solid #c9a96e;
     border-collapse: collapse; /* junta as bordas */
 }
 
 #tabela-produtos th,
 #tabela-produtos td {
-    border: 1px solid white;
+    border: 1px solid #c9a96e;
     padding: 8px;
     color: white;
 }
 
-/* formulário simples */
-form {
-    text-align: left;
-    max-width: 300px;
-    margin: auto;
+.comprar-produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.produtos-escolha  {
+    margin-top: 20px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(201,169,110,0.25);
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 35px 32px;
     color: white;
+    resize: none;
+    font-family: Roboto, Calibri, cursive;
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+    
+    h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        color: #c9a96e;
+        margin-bottom: 10px;
+    }
 }
 
-form input,
-form select {
+.produtos-escolha label {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(201,169,110,0.85);
+}
+
+.produtos-escolha input,
+.produtos-escolha textarea,
+.produtos-escolha select {
+    background: rgba(0,0,0,0.25);
+    border: 1px solid rgba(201,169,110,0.25);
+    border-radius: 6px;
+    color: #f5ede0;
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 12px 14px;
+    outline: none;
+    transition: border-color 0.2s;
     width: 100%;
+    display: block;
+    margin-bottom: 12px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.produtos-escolha button {
+    background: #c9a96e;
+    color: #3a0612;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.produtos-escolha button:hover {
+    background: #b3956b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(201, 169, 110, 0.3);
+}
+
+.produtos-escolha .termos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: fit-content;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+}
+
+.produtos-escolha .termos label {
+    margin: 0;
+    display: inline;
+}
+
+.produtos-escolha .termos input {
+    margin: 0;
+}
+
+/* Contato */
+
+.layout-contato {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 90px;
+    flex-wrap: wrap;
+}
+
+.layout-contato h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #c9a96e;
+    text-transform: uppercase;
+}
+.dados span {
+    text-align: center;
+    color: #c9a96e;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.dados p {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+.layout-contato .contatos,
+.layout-contato .contato {
+    flex: 1 1 920px;
+    max-width: 680px;
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+}
+
+.entrar-em-contato  {
+    margin-top: 20px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(201,169,110,0.25);
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 35px 32px;
+    color: white;
+    resize: none;
+    font-family: Roboto, Calibri, cursive;
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+    
+    h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        color: #c9a96e;
+        margin-bottom: 10px;
+    }
+}
+
+.entrar-em-contato label {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(201,169,110,0.85);
+}
+
+.entrar-em-contato input,
+.entrar-em-contato textarea,
+.entrar-em-contato select {
+    background: rgba(0,0,0,0.25);
+    border: 1px solid rgba(201,169,110,0.25);
+    border-radius: 6px;
+    color: #f5ede0;
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 12px 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    width: 100%;
+    display: block;
+    margin-bottom: 12px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.termos input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #c9a96e;
+    flex-shrink: 0;
+}
+
+.termos label {
+    font-size: 10px;
+    color: rgba(245,237,224,0.65);
+    font-weight: 300;
+}
+
+.entrar-em-contato button {
+    background: #c9a96e;
+    color: #3a0612;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.entrar-em-contato button:hover {
+    background: #b3956b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(201, 169, 110, 0.3);
+}
+
+.entrar-em-contato label {
+    display: block;
+    margin-top: 6px;
+    margin-bottom: 2px;
+    text-align: left;
+}
+
+.entrar-em-contato .termos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: fit-content;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+}
+.entrar-em-contato .termos label {
+    margin: 0;
+    display: inline;
+}
+
+.entrar-em-contato .termos input {
+    margin: 0;
+}
+
+.contatos {
+    width: 100%;
+    padding: 30px 60px;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-align: justify;
+    font-size: 24px;
+    text-indent: 4px;
+    flex-direction: column;
+}
+
+.horario {
+    background-color: rgba(0,0,0,0.2);
+    border: 1px solid rgba(201,169,110,0.2);
+    border-radius: 10px;
+    padding: 19px 22px;
+    width: 60%;
+    
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #c9a96e;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+        color: rgba(214, 209, 200, 0.842);
+        font-weight: 300;
+        padding: 3px 0;
+    }
+}
+
+/* Membros da Equipe */
+
+main.equipe {
+    display: flex;
+    flex-direction: column;
+}
+
+main.equipe > section.equipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+#felippetuma {
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+#diegorocha {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+#renansilva {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+#davitoyota {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.membros {
+    color: white;
+    text-align: center;
+}
+.membro {
+    margin-top: 40px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(201,169,110,0.25);
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 35px 32px;
+    color: white;
+    resize: none;
+    font-family: Roboto, Calibri, cursive;
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+    flex: 0 0 calc(25% - 15px);
+    max-width: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100%;
+}
+
+.membro h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #c9a96e;
     margin-bottom: 10px;
+}
+
+.membro img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.membro p {
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.membro .links {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* footer */
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    color: white;
 }
