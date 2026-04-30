@@ -1,0 +1,29 @@
+/* Seleção de texto */
+p::selection {
+    color: white;
+    background-color: #c9a96e;
+}
+h1::selection {
+    color: white;
+    background-color: #c9a96e;
+}
+h2::selection {
+    color: white;
+    background-color: #c9a96e;
+}
+h3::selection {
+    color: white;
+    background-color: #c9a96e;
+}   
+h4::selection {
+    color: white;
+    background-color: #c9a96e;
+}
+h5::selection {
+    color: white;
+    background-color: #c9a96e;
+}
+h6::selection {
+    color: white;
+    background-color: #c9a96e;
+}
