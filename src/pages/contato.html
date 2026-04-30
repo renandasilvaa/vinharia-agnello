@@ -7,75 +7,81 @@
     <meta name="description" content="Entre em contato com a Agnello Vinheria. Telefone, email e endereço para que você possa nos encontrar e conhecer nossos vinhos de perto. Estamos ansiosos para receber sua visita!">
     <title>Agnello Vinheria - Contato</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/efeitos.css">
+
 </head>
 <body>
-    <header>
+    <header class="start">
         <h1>Agnello Vinheria</h1>
     </header>
-    <nav aria-label="Navegacao principal">
-        <ul class="nav-list">
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="historia.html">Historia</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="equipe.html">Equipe</a></li>
-        </ul>
-    </nav>
+    <section class="nav">
+        <nav aria-label="Navegacao principal">
+            <ul class="nav-list">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+            </ul>
+        </nav>
+    </section>
     <main>
-        <section>
-            <h2>Contatos</h2>
-            <address>
-                <p>Telefone: (11) 1234-5678</p>
-                <p>Email: contato@agnellovinheria.com</p>
-                <p>Endereco: Rua das Vinhas, 123 - Sao Paulo, SP</p>
-            </address>
-<div class="fotos">
-            <img src="../assets/imgs/loja_fisica/entrada_adega_agnello.png" alt="Entrada da loja física da Agnello Vinheria" width="500px" height="300px">
-            <img src="../assets/imgs/loja_fisica/adega_agnello.png" alt="Adega da loja física da Agnello Vinheria, com prateleiras repletas de vinhos de diversas regiões e safras, proporcionando uma experiência visual e sensorial única para os amantes do vinho." width="500px" height="300px">
+        <div class="layout-contato">
+            <section class="contatos">
+                <div class="dados">
+                    <h1>Contatos</h1>
+                    <p><span>Telefone:</span><br>(11) 1234-5678</p>
+                    <p><span>Email:</span><br> contato@agnellovinheria.com</p>
+                    <p><span>Endereço:</span><br> Rua dos Vinhos, 123 - São Paulo/SP</p>
+                </div>
+                
+                <div class="horario">
+                    <h3>Horário de Funcionamento</h3>
+                    <p><span>Segunda a Sexta:</span> <span>10h às 20h</span></p>
+                    <p><span>Sábado:</span> <span>10h às 18h</span></p>
+                    <p><span>Domingo:</span> <span>Fechado</span></p>
+                </div>
+                <!-- <div class="interior-fotos">
+                    <img src="../assets/imgs/loja_fisica/entrada_adega_agnello.png" alt="Entrada da loja física da Agnello Vinheria" width="500px" height="300px">
+                    <img src="../assets/imgs/loja_fisica/adega_agnello.png" alt="Adega da loja física da Agnello Vinheria, com prateleiras repletas de vinhos de diversas regiões e safras, proporcionando uma experiência visual e sensorial única para os amantes do vinho." width="500px" height="300px">
+                </div> -->
+            </section>
+            
+            <section class="contato">
+                <div class="entrar-em-contato">
+                    <h2>Entrar em Contato</h2>
+                    <form action="">
+                        <label for="nome-sobrenome">Nome Completo:</label>
+                        <input type="text" name="nome-sobrenome" placeholder="Digite o seu nome." required>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="Digite seu email." required>
+                        <label for="phone">Telefone:</label>
+                        <input type="tel" name="phone" placeholder="Digite seu telefone." required>
+                        <label for="opcoes-vinhos">Qual o seu vinho favorito?</label>
+                        <select name="opcoes-vinhos" id="opcoes-vinhos">
+                            <option value="selecione" disabled selected>Selecione um produto</option>
+                            <option value="vinho-tinto-suave">Vinho Tinto Suave</option>
+                            <option value="vinho-branco-chardonnay-reserva">Vinho Branco Chardonnay Reserva</option>
+                            <option value="vinho-branco-suave-sobremesa">Vinho Branco Suave / Sobremesa</option>
+                            <option value="vinho-rose-suave-reserva">Vinho Rosé Suave Reserva</option>
+                            <option value="vinho-rose-meio-seco">Vinho Rosé Meio Seco</option>
+                            <option value="vinho-espumante-branco-brut">Vinho Espumante Branco Brut</option>
+                            <option value="vinho-espumante-branco-doce-moscatel">Vinho Espumante Branco Doce (Moscatel)</option>
+                        </select>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea name="mensagem" placeholder="Digite sua mensagem aqui." required></textarea>
+                        <div class="termos">
+                            <input required type="checkbox" id="termos-contato">
+                            <label for="termos-contato">Li e concordo com os <span style="color: #c9a96e;">termos de uso</span> e a <span style="color: #c9a96e;">política de privacidade</span></label>
+                        </div>
+                        <br>
+                        
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </section>
         </div>
-        </section>
-
-        <section>
-            <h4>Entre em Contato</h4>
-            <div class="form">
-            <form action="" method="get">
-                <fieldset>
-                    <legend>Entre em Contato</legend>
-                    <label for="nome_sobrenome">Nome Completo:</label>
-                    <input type="text" name="nome_sobrenome" placeholder="Digite aqui." required><br>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" placeholder="Digite seu email." required><br>
-                    <label for="mensagem">Mensagem:</label><br>
-                    <textarea name="mensagem" placeholder="Digite sua mensagem aqui." required></textarea><br><br>
-
-                    <h5> Qual o seu vinho favorito? </h5>
-                    <input type="radio" name="vinhos" value="Tinto">
-                    <label for="Tinto">Vinho Tinto Suave</label><br>
-
-                    <input type="radio" name="vinhos" value="Branco">
-                    <label for="Branco">Vinho Branco Chardonnay Reserva</label><br>
-                    <input type="radio" name="vinhos" value="Branco">
-                    <label for="Branco">Vinho Branco Suave / Sobremesa</label><br>
-
-                    <input type="radio" name="vinhos" value="Rosé">
-                    <label for="Rosé">Vinho Rosé Suave Reserva</label><br>
-
-                    <input type="radio" name="vinhos" value="Rosé">
-                    <label for="Rosé">Vinho Rosé Meio Seco</label><br>
-
-                    <input type="radio" name="vinhos" value="Espumante">
-                    <label for="Espumante">Vinho Espumante Branco Brut</label><br>
-                    <input type="radio" name="vinhos" value="Espumante">
-                    <label for="Espumante">Vinho Espumante Branco Doce (Moscatel)</label><br>
-
-                    <br><br>
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Limpar</button>
-                </fieldset>
-            </form>
-        </section>
     </main>
-    </div>
     <footer>
         <p>&copy; 2026 Agnello Vinheria. All rights reserved.</p>
     </footer>
